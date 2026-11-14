@@ -16,3 +16,11 @@ node_modules/
 __pycache__/
 .venv/
 venv/
+
+
+# Added by cargo
+
+/target
+
+# runtime data (sqlite db, master key, generated release packages)
+/data/

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>科研数据脱敏平台 · 三甲医院科研处</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">🛡</div>
+      <div>
+        <div class="brand-title">科研数据脱敏平台</div>
+        <div class="brand-sub">三甲医院 · 科研处</div>
+      </div>
+    </div>
+    <nav id="nav">
+      <a href="#/overview" data-route="overview"><span>总览</span></a>
+      <a href="#/datasets" data-route="datasets"><span>① 数据集登记</span></a>
+      <a href="#/fields" data-route="fields"><span>② 字段识别</span></a>
+      <a href="#/policy" data-route="policy"><span>③ 脱敏策略</span></a>
+      <a href="#/risk" data-route="risk"><span>④ 风险评估</span></a>
+      <a href="#/approval" data-route="approval"><span>⑤ 发布审批</span></a>
+      <a href="#/audit" data-route="audit"><span>审计追溯</span></a>
+      <a href="#/synthetic" data-route="synthetic"><span>测试数据与检出率</span></a>
+    </nav>
+    <div class="side-foot">
+      <div class="actor-box">
+        <label>当前操作人</label>
+        <input id="actor" value="科研处管理员">
+      </div>
+      <div class="chain" id="chain-status">审计链：检测中…</div>
+    </div>
+  </aside>
+  <main id="main">
+    <div class="page-head">
+      <div>
+        <h1 id="page-title">总览</h1>
+        <p id="page-sub">脱敏与发布全流程工作台</p>
+      </div>
+      <div class="head-actions" id="head-actions"></div>
+    </div>
+    <div id="content"></div>
+  </main>
+</div>
+<div id="toast" class="toast"></div>
+<div id="modal-root"></div>
+<script src="/app.js"></script>
+</body>
+</html>
